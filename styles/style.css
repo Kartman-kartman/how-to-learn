@@ -106,71 +106,70 @@ left: 64px;
   font-weight: 600;
 
 }
-.table-title {
-width: 60%;
-margin-top: 100px;
-margin: auto;
-font-size: 60px;
-line-height: 1.15;
-font-weight: 600;
-text-align: center;
 
-}
-.table-subtitle {
-width: 60%;
-margin-top: 20px;
-margin-left: auto;
-font-size: 24px;
-line-height: 34px;
-font-style: normal;
-}
-.table {
-  width: 1100px;
-  padding: auto;
-  margin: auto;
-  margin-top: 60px;
-  
- 
-
-}
-.card {
-  width: 250px;
-  margin-top: 60px;
-}
-.card-list {
+.digits {
+  display: flex;
   width: 100%;
+  min-height: 700px;
+  position: relative;
+  justify-content: center;
+}
+
+.digits-title {
+  width: 60%;
+  justify-content: center;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+  display: flex;
+  position: absolute;
+}
+.digits-subtitle {
+  width: 60%;
+  display: flex;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  position: absolute;
+  justify-content: center;
+  top: 100px;
+}
+
+.table {
+ 
+  width: 1100px;
   list-style-type: none;
   padding:auto;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
-
-.card__heading {
+.cell {
+  width: 250px;
+  margin-top: 60px;
+  
+}
+.cell__heading {
   font-size: 24px;
   line-height: 1.15;
   font-weight: 600;
   }
 
-.card__text {
+.text {
   font-size: 18px;
   line-height: 1.2;
   font-style: normal;
 }
 
-.table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
-}
+
 .feynman {
 
   min-height: 890px;
   background-color: #f2f2f2;
   display: flex;
   align-items: center;
-  justify-content:flex-end; 
+  justify-content:center; 
   position: relative; 
 }
 .secondary-pic {
@@ -183,48 +182,82 @@ font-style: normal;
 }
 .title-feynman {
   position: absolute;
-  max-width: 648px;
- 
-   font-size: 120px;
+  width: 648px;
+  margin:0;
+  justify-content: center;
+  font-size: 120px;
+  top: 100px;
   line-height:1.15;
   font-weight: 600;
   text-align: center;
   z-index: 4;
 }
 .subtitle-feynman {
-
-  text-align: center;
+  position: absolute;
+  margin:0;
   justify-content: center;
+  z-index: 4;
+  font-size: 36px;
+  line-height:51px;
+  font-style: normal;
 }
 .feynman__link {
   position: absolute;
   top:50%;
   right: 50px;
+  color: blue;
+  font-size: 36px;
+  line-height:51px;
+  font-style: normal;
 
 }
 
-.dark-table {
-    height: 100vh;
+.kayfman {
+    width: 100%;
     min-height: 600px;
     max-height: 756px;
     background-color: #1f1f1f;
     display: flex;
-    align-items: center;
-    justify-content:flex-start; 
+    align-content: center;
+    justify-content: center;
     position: relative; 
     flex-wrap: wrap;
     overflow: hidden;
 }
 .title-dark {
   position: absolute;
-  top:0px;
-  width: 648px;
-  font-size: 120px;
+  margin: 0;
+  padding: 0;
+  top: 90px;
+  color: white;
+  width: 60%;
+  font-size: 60px;
   line-height:1.15;
   font-weight: 600;
+  text-align: center;
 }
-.triangle-pic {
+.subtitle-dark {
   
+  color: white;
+  margin-top: 20px;
+  width: 60%;
+  font-size: 24px;
+  line-height:34px;
+  font-style: normal;
+  text-align: center;
+}
+.table__cell_theme_dark {
+  
+  /* width: 100px; */
+  color: white;
+  z-index: 4;
+  margin-top: 80px;
+}
+.table__cell_dark {
+  width: 200px;
+}
+
+.triangle-pic {
  width: 877px;
  height: 877px;
  position:absolute;
@@ -235,6 +268,3 @@ font-style: normal;
   min-height: 350px;
   background-color: #1f1f1f;
 }
-.card__text_kayfman_dark {
-  color:white;
-} 
