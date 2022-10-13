@@ -71,16 +71,18 @@ left: 64px;
   right: 0px;
   z-index: 2;
 }
+.description {
+  width: 100%;
+}
 .two-columns {
   margin-top: 100px;
+  margin-bottom: 100px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   width: 80%;
   min-width: 784px;
-  align-items: top;
-  justify-content: space-between;  
-  
+  justify-content: space-between; 
 }
 .brief {
   color: blue;
@@ -96,9 +98,16 @@ left: 64px;
   margin-top: 0;
 }
 .paragraph {
+  margin: 0;
+  padding: 0;
   font-size: 24px;
   line-height: 34px;
   font-style: normal;
+}
+
+.paragraph__center {
+  margin-top:30px;
+  margin-bottom:30px;
 }
 .word {
   font-size: 24px;
@@ -108,55 +117,62 @@ left: 64px;
 }
 
 .digits {
-  display: flex;
   width: 100%;
   min-height: 700px;
-  position: relative;
+  display: flex;
+  align-content: flex-start;
   justify-content: center;
+  position: relative;
+  flex-wrap: wrap;
 }
 
-.digits-title {
+.section-title {
   width: 60%;
-  justify-content: center;
+  padding:0;
+  margin: 100px 0 0 0;
   line-height: 1.15;
   font-size: 60px;
   font-weight: 600;
-  display: flex;
-  position: absolute;
+  text-align: center;
 }
-.digits-subtitle {
+.section-subtitle {
   width: 60%;
-  display: flex;
+  padding:0;
+  margin: 20px 0 0 0;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
-  position: absolute;
-  justify-content: center;
   top: 100px;
+  text-align: center;
 }
 
 .table {
  
   width: 1100px;
   list-style-type: none;
-  padding:auto;
-  margin: auto;
+  padding:0;
+  margin: 0 auto 100px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
+  
 }
 .cell {
   width: 250px;
   margin-top: 60px;
   
 }
-.cell__heading {
+.heading {
+  margin:0;
+  padding:0;
   font-size: 24px;
   line-height: 1.15;
   font-weight: 600;
   }
 
 .text {
+  margin:20px 0 0 0;
+  padding:0;
   font-size: 18px;
   line-height: 1.2;
   font-style: normal;
@@ -201,7 +217,7 @@ left: 64px;
   line-height:51px;
   font-style: normal;
 }
-.feynman__link {
+.feynman-link {
   position: absolute;
   top:50%;
   right: 50px;
@@ -222,27 +238,14 @@ left: 64px;
   flex-wrap: wrap;
   overflow: hidden;
 }
-.title-dark {
-  margin-top: 90px;
-  margin-bottom: 0;
+.section-title__dark {
   color: white;
-  width: 60%;
-  font-size: 60px;
-  line-height:1.15;
-  font-weight: 600;
-  text-align: center;
-}
-.subtitle-dark {  
-  margin-top: 20px;
-  margin-bottom: 0;
+  }
+  
+.section-subtitle__dark {  
   color: white;
-  width: 60%;
-  line-height:34px;
-  font-size: 34px;
-  font-style: normal;
-  text-align: center;
- 
-}
+  }
+
 .table__cell_theme_dark {
   
   /* width: 100px; */
