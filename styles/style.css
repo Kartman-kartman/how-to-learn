@@ -17,7 +17,6 @@
   background-color: #f2f2f2;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
   position: relative; /* выше установили ограничения для секции */
 }
 .logo {
@@ -31,8 +30,8 @@ left: 64px;
 
 }
 .title {
-  position: absolute;
-  left: 64px;
+  /* position: absolute; */
+  margin-left: 64px;
   max-width: 730px;
   font-size: 102px;
   line-height: 96px;
@@ -60,6 +59,7 @@ left: 64px;
   width: 568px;
   position: absolute;
   top: 64px;
+  right: 0;
   background-color: #2f80ed;
   z-index: 1;
 }
@@ -241,21 +241,21 @@ left: 64px;
 .section-title__dark {
   color: white;
   }
-  
+
 .section-subtitle__dark {  
   color: white;
   }
 
-.table__cell_theme_dark {
+.table__theme_dark {
   
   /* width: 100px; */
   color: white;
   z-index: 4;
-  margin-top: 80px;
   margin-bottom: 90px;
 }
-.table__cell_dark {
+.cell-dark {
   width: 200px;
+  margin-top:80px;
 }
 
 .triangle-pic {
@@ -269,6 +269,11 @@ left: 64px;
   width: 100%;
   min-height: 350px;
   background-color: #1f1f1f;
+  display: flex;
+  align-content: flex-start;
+  justify-content: center;
+  position: relative;
+  flex-wrap: wrap;
 }
 
 .columns {
@@ -278,10 +283,12 @@ left: 64px;
   position: relative;
 }
 .logo_place_footer {
+  position: absolute;
 }
 .column_content_copyright {
   margin-top: 60px;
   margin-bottom: 40px;
+  display:flex;
   flex-basis: 711px;
   min-height:350px;
 }
@@ -296,11 +303,8 @@ left: 64px;
   line-height:30px;
   color: aliceblue;
 }
-.footer__author {
-  position:absolute;
-  left: 0;
-  bottom: 18px;
-  margin-top: 18px;
+.author {
+  align-self:flex-end;
   font-size: 18px;
   font-style: normal;
   line-height:25px;
