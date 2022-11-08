@@ -9,6 +9,6 @@
   font-style: normal;
   }
   .feynman__link:hover {
-  transition: 1s linear 1s;    
+  transition: 1s linear 1s;
   opacity: 0.33;
   }

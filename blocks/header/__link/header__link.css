@@ -3,6 +3,6 @@
   text-decoration: none;
   }
   .header__link:hover {
-  transition: 1s linear 1s;    
+  transition: 1s linear 1s;
   opacity: 0.33;
   }
