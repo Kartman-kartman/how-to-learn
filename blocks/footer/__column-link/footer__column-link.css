@@ -7,3 +7,7 @@
   text-decoration: none;
   color: #fff;  
 }
+.footer__column-link:hover {
+  transition: 1s linear 1s;
+  opacity: 0.33;
+  }
