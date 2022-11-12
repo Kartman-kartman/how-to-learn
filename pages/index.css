@@ -1,5 +1,5 @@
-@import "../blocks/vendor/normalize.css";
-@import "../blocks/content.css";
+@import "../vendor/normalize.css";
+@import "../blocks/content/content.css";
 @import "../blocks/rotation/rotate.css";
 @import "../blocks/page/page.css";
 @import "../blocks/section-title/section-title.css";
@@ -94,8 +94,9 @@
 @import "../blocks/footer/footer.css";
 @import "../blocks/footer/__columns/footer__columns.css";
 @import "../blocks/footer/__column/footer__column.css";
-@import "../blocks/footer/__column/__column_content_copyright/footer__column_content_copyright.css";
-@import "../blocks/footer/__column/__column_content_info/footer__column_content_info.css";
+@import "../blocks/footer/__column/_content/footer__column_content_copyright.css";
+@import "../blocks/footer/__column/_content/footer__column_content_info.css";
+
 @import "../blocks/footer/__author/footer__author.css";
 @import "../blocks/footer/__column-heading/footer__column-heading.css";
 @import "../blocks/footer/__column-links/footer__column-links.css";
