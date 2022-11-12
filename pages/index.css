@@ -1,12 +1,17 @@
 @import "../blocks/vendor/normalize.css";
+@import "../blocks/content.css";
 @import "../blocks/rotation/rotate.css";
-@import "../blocks/vendor/content.css";
+@import "../blocks/page/page.css";
 @import "../blocks/section-title/section-title.css";
 @import "../blocks/section-subtitle/section-subtitle.css";
+
+
+
+
 @import "../blocks/two-columns/two-columns.css";
-@import "../blocks/two-columns/brief.css";
-@import "../blocks/two-columns/main-text.css";
-@import "../blocks/two-columns/paragraph.css";
+@import "../blocks/two-columns/__brief/two-columns__brief.css";
+@import "../blocks/two-columns/__main-text/two-columns__main-text.css";
+@import "../blocks/two-columns/__paragraph/two-columns__paragraph.css";
 @import "../blocks/two-columns/__span-accent/two-columns__span-accent.css";
 @import "../blocks/section-title/_theme/section-title_theme_dark.css";
 @import "../blocks/section-subtitle/_theme/section-subtitle_theme_dark.css";
@@ -14,6 +19,13 @@
 @import "../blocks/table/__heading/table__heading.css";
 @import "../blocks/table/__cell/table__cell.css";
 @import "../blocks/table/__text/table__text.css";
+@import "../blocks/cards/cards.css";
+@import "../blocks/cards/__item/cards__item.css";
+@import "../blocks/cards/__image/cards__image.css";
+@import "../blocks/cards/__title/cards__title.css";
+@import "../blocks/cards/__description/cards__description.css";
+
+
 
 
 @import "../blocks/table/__cell/_theme/table__cell_theme_dark.css";
@@ -32,11 +44,9 @@
 @import "../blocks/description/description.css";
 
 @import "../blocks/techniques/techniques.css";
-@import "../blocks/techniques/cards/cards.css";
-@import "../blocks/techniques/cards/__item/cards__item.css";
-@import "../blocks/techniques/cards/__image/cards__image.css";
-@import "../blocks/techniques/cards/__title/cards__title.css";
-@import "../blocks/techniques/cards/__description/cards__description.css";
+
+
+
 
 
 @import "../blocks/video/video.css";
